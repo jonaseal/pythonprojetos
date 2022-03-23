@@ -49,6 +49,7 @@ baixar = navegador.find_element_by_xpath('//*[@id="asuccess"]')
 baixar.click()
 
 aguardar = input("aguargar enter")
+aguardar = input("aguardando...")
 
 
 
