@@ -3,193 +3,79 @@ import json
 
 url = 'https://www.w3schools.com/python/demopage.php'
 objeto = {
-    "type": "object",
-    "properties": {
-        "cadastrarvaga": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "dadosdaempresa": {
-                        "type": "object",
-                        "properties": {
-                            "cnpj": {
-                                "type": "string"
-                            },
-                            "razão social": {
-                                "type": "string"
-                            },
-                            "nome fantasia": {
-                                "type": "string"
-                            },
-                            "cep ": {
-                                "type": "string"
-                            },
-                            "endereco": {
-                                "type": "string"
-                            },
-                            "numero": {
-                                "type": "string"
-                            },
-                            "complemento": {
-                                "type": "string"
-                            },
-                            "bairro": {
-                                "type": "string"
-                            },
-                            "municipio": {
-                                "type": "string"
-                            },
-                            "uf": {
-                                "type": "string"
-                            },
-                            "empresafoinotificada": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "caracteristicasdavaga": {
-                        "type": "object",
-                        "properties": {
-                            "permitircandidaturas": {
-                                "type": "string"
-                            },
-                            "permitircandiporlocal": {
-                                "type": "string"
-                            },
-                            "periododecandiinicio": {
-                                "type": "string"
-                            },
-                            "períododecandifim:": {
-                                "type": "string"
-                            },
-                            "cidadeestadooubairro": {
-                                "type": "string"
-                            },
-                            "numerojovens": {
-                                "type": "string"
-                            },
-                            "cargooferecido": {
-                                "type": "string"
-                            },
-                            "genero": {
-                                "type": "string"
-                            },
-                            "faixaetariaminima": {
-                                "type": "string"
-                            },
-                            "faixaetariamaxima": {
-                                "type": "string"
-                            },
-                            "tercompletidademinimaate": {
-                                "type": "string"
-                            },
-                            "beneficios": {
-                                "type": "string"
-                            },
-                            "condicoes": {
-                                "type": "string"
-                            },
-                            "descricaodasatividades": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "sobreocontrato": {
-                        "type": "object",
-                        "properties": {
-                            "datadacontratacao": {
-                                "type": "string"
-                            },
-                            "remuneracao": {
-                                "type": "string"
-                            },
-                            "vagadesubstuicao": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "dadosdaselecao": {
-                        "type": "object",
-                        "properties": {
-                            "dataselecao": {
-                                "type": "string"
-                            },
-                            "nomedoresponsavel": {
-                                "type": "string"
-                            },
-                            "cargo": {
-                                "type": "string"
-                            },
-                            "telefone": {
-                                "type": "string"
-                            },
-                            "e-mail": {
-                                "type": "string"
-                            },
-                            "localdeselecao": {
-                                "type": "string"
-                            },
-                            "linkdareuniao": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "perfiljovem": {
-                        "type": "object",
-                        "properties": {
-                            "tipocontrato": {
-                                "type": "string"
-                            },
-                            "escolaridade": {
-                                "type": "string"
-                            },
-                            "serie": {
-                                "type": "string"
-                            },
-                            "cursos": {
-                                "type": "array"
-                            },
-                            "perfilcomportamental": {
-                                "type": "array"
-                            }
-                        }
-                    },
-                    "provas": {
-                        "type": "object",
-                        "properties": {
-                            "queroaplicar": {
-                                "type": "string"
-                            },
-                            "provas": {
-                                "type": "array"
-                            },
-                            "aplicarredacao": {
-                                "type": "string"
-                            },
-                            "temaredacao": {
-                                "type": "string"
-                            }
-                        }
-                    }
-                },
-                "required": [
-                    "id",
-                    "dadosdaempresa",
-                    "caracteristicasdavaga",
-                    "sobreocontrato",
-                    "dadosdaselecao",
-                    "perfiljovem",
-                    "provas"
-                ]
-            }
+	"cadastrarvaga": [
+	  {
+		"id": 1,
+		"dadosdaempresa": {
+            "cnpj": "84101722000122",  
+            "razão social": "CUBOBPM",
+            "nome fantasia": "CUBOBPM",
+            "cep ":"74645010",
+            "endereco":"Avenida Independencia",
+            "numero":"12345",
+            "complemento": "Apartamento",
+            "bairro": "Vila Nova",
+            "municipio": "Goiânia",
+            "uf": "Goiás",
+            "empresafoinotificada":"Sim"          
+            },
+
+		"caracteristicasdavaga": {
+
+            "permitircandidaturas": "Sim",
+            "permitircandiporlocal": "Sim",
+            "periododecandiinicio":"31/03/2022",
+            "períododecandifim:":"01/04/2022",
+            "cidadeestadooubairro":"Goiás",
+            "numerojovens":"10",
+            "cargooferecido": "Programador",
+            "genero": "Homem",
+            "faixaetariaminima": "18",
+            "faixaetariamaxima": "56",
+            "tercompletidademinimaate": "Sim",
+            "beneficios": ["Transporte","Alimentação","P Saúde","P Odontológico"],
+            "condicoes":["Insalubre", "Perigoso"],
+            "descricaodasatividades": "Vaga criada por robo (RPA)"
+
+        },
+		"sobreocontrato": {
+
+            "datadacontratacao": "22/03/2022",
+            "remuneracao": "100000",
+            "vagadesubstuicao":"Sim"
+        },
+		"dadosdaselecao": {
+
+            "dataselecao": "30/03/2022",
+            "nomedoresponsavel":"Carlos",
+            "cargo": "Programador",
+            "telefone":"62992542458",
+            "e-mail":"teste@gmail.com",
+            "localdeselecao":"Presencial",
+            "linkdareuniao":"www.teste.com"
+
+        },
+		"perfiljovem": {
+            "tipocontrato":"Estágio",
+            "escolaridade":"Básico",
+            "serie":"N1",
+            "cursos":["Programação","Administração"],
+            "perfilcomportamental":["Inovador","Comunicativo", "Empatia","Gostar de números", "Detalhista"]
+
+        },
+		"provas": {
+            "queroaplicar":"Sim",
+            "provas":["Português", "Matemática"],
+            "aplicarredacao":"Sim",
+            "temaredacao":["teste"]
         }
-    }
+        
+	  }
+	]
+    
 }
+
 
 #resultado = requests.post(url, data = myobj)
 
-print(objeto['cadastrarvaga'])
+print(objeto['cadastrarvaga'][0]['caracteristicasdavaga']['beneficios'])
