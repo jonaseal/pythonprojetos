@@ -33,7 +33,7 @@ navegador.get(link)
 
 navegador.get('https://x2download.com/pt5/download-youtube-to-mp3')
 
-inputsite = navegador.find_element_by_xpath('//*[@id="s_input"]')
+inputsite = navegador.find_element_by_xpath('//form/input')
 inputsite.send_keys(link)
 
 botaomp3 = navegador.find_element_by_xpath('//*[@id="search-form"]/button')
